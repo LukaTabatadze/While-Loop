@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>numbers</title>
+  
+</head>
+<body>
+  <h1>რიცხვები 100-დან 1-მდე</h1>
+  <div id="numbers"></div>
+
+  <script>
+    const numbersElement = document.getElementById('numbers');
+
+    let number = 101;
+
+    while (number >= 2) {
+
+        const span = document.createElement('span');
+
+        numbersElement.appendChild(span);
+
+        number--;
+
+        span.textContent = number + ' ';
+
+    }
+  </script>
+</body>
+</html>
